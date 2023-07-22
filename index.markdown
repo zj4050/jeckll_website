@@ -1,14 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: ""
+
 ---
 
 # About me
 
-My name is Ziming Ji and I am a Master Astrophysics student at the [Rochester Institute of Technology](https://www.rit.edu) in NY USA.
+My name is Ziming Ji and I am a Master student in [Astrophysical Sciences and Technology Program](https://www.rit.edu/study/astrophysical-sciences-and-technology-phd) at the [Rochester Institute of Technology](https://www.rit.edu) in NY USA.
 My Master project focuses on the identification of [Supermassive Binary Black Holes (SMBBHs)](https://en.wikipedia.org/wiki/Binary_black_hole).
 I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 
@@ -17,8 +15,11 @@ I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 - Supermassive Binary black holes
 - Active Galactic Nuclei
 
+# Research Projects
 
+#### 1. [Study of the Behaviors of Time-Varied SEDs emitted by BLRs around SMBBHs]({% link Projects/binary_black_hole.md %})
 
+#### 2. [ Spectroscopic Analysis of OH-MegaMaser Galaxy IRAS 11506-3851]({% link Projects/IRAS 11506-3851.md %})
 
 
 # Education
@@ -27,6 +28,4 @@ I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 * Bachalor in Physics & Astronomy, Sep 2019 - May 2022
 
 
-# CV
-
-- [Click here](assests/pdf/CV(Ziming_Ji).pdf)
+# [CV](assests/pdf/CV(Ziming_Ji).pdf)
