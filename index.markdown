@@ -8,7 +8,7 @@ title: ""
 
 # About me
 
-My name is Ziming Ji and I am a Master student at the [Rochester Institute of Technology](https://www.rit.edu) in NY USA.
+My name is Ziming Ji and I am a Master Astrophysics student at the [Rochester Institute of Technology](https://www.rit.edu) in NY USA.
 My Master project focuses on the identification of [Supermassive Binary Black Holes (SMBBHs)](https://en.wikipedia.org/wiki/Binary_black_hole).
 I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 
@@ -16,6 +16,10 @@ I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 
 - Supermassive Binary black holes
 - Active Galactic Nuclei
+
+
+
+
 
 # Education
 
