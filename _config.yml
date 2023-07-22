@@ -20,9 +20,8 @@
 
 title: Ziming Ji Personal Website
 email: zj4050@rit.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  I am a graduate student studying astrophysics at Rochester Institute of Technology (RIT). 
-  My current research project is about the supermassive black hole binary systems. 
+description: "" # this means to ignore newlines until "baseurl:"
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -32,6 +31,7 @@ github_username:  zj4050
 theme: minima
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
