@@ -6,7 +6,9 @@ title: "Study of Behaviors of Time-Varied SEDs emitted by BLRs around SMBBHs"
 
 ## Raw data for SEDs
 
+https://github.com/zj4050/zj4050.github.io/assets/99605082/78cf381c-ad2b-4423-b7dd-44dbd94f6e4b
 
-![Spinning black holes](projects/binary_black_hole/mp4/animation.mp4)
 
-![Spinless Black Holes](projects/binary_black_hole/mp4/Zero-Spin.mp4)
+
+https://github.com/zj4050/zj4050.github.io/assets/99605082/0c5a0b0f-c6db-4983-a6f8-7d02259b50fe
+
