@@ -28,7 +28,8 @@ The formula is shown below:
 
 $$\log\left({\frac{R_{BLR}}{1 \text{ lt-day}}}\right) = K + \alpha \log\left({\frac{\lambda L_{\lambda}}{10^{44} \text{ erg/s}}}\right)$$
 
-, where $$K = 1.527$$ and $$\alpha = 0.533$$.
+, where $$K = 1.527$$ and $$\alpha = 0.533$$, and $$\lambda L_{\lambda}$$ is the optical luminosity at wavelength 5100 <span>&#8491;</span>.
+
 ### 1.2.2 Binary-Black-Hole Models
 
 We have built a list of models for the binary black holes for [CLOUDY](https://trac.nublado.org) to run simulation.
