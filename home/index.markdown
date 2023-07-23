@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: ""
 
 ---
@@ -17,9 +17,9 @@ I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 
 # Research Projects
 
-#### 1. [Study of the Behaviors of Time-Varied SEDs emitted by BLRs around SMBBHs]({% link Projects/binary_black_hole.md %})
+#### 1. [Study of the Behaviors of Time-Varied SEDs emitted by BLRs around SMBBHs]({% link projects/binary_black_hole.md %})
 
-#### 2. [ Spectroscopic Analysis of OH-MegaMaser Galaxy IRAS 11506-3851]({% link Projects/IRAS 11506-3851.md %})
+#### 2. [ Spectroscopic Analysis of OH-MegaMaser Galaxy IRAS 11506-3851]({% link projects/IRAS 11506-3851.md %})
 
 
 # Education
