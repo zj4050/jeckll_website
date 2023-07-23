@@ -31,5 +31,5 @@ I simulate the SMBBHs simulation data using CLOUDY and analyze the output data.
 # [CV](assests/pdf/CV(Ziming_Ji).pdf)
 
 
-https://github.com/zj4050/zj4050.github.io/assets/99605082/6356b568-02a9-44ae-aa26-cae34bde0eae
+
 
