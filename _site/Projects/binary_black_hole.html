@@ -25,8 +25,16 @@
 
   <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
   
-  
 
+    <!-- for mathjax support -->
+    
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+      <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 </head>
 
   <body>
@@ -82,13 +90,162 @@
   <h1 class="page-title">Study of Behaviors of Time-Varied SEDs emitted by BLRs around SMBBHs</h1>
   <h2 id="11-overview">1.1 Overview</h2>
 
-<h2 id="raw-data-for-seds">Raw data for SEDs</h2>
+<p>This project is intended to investigate the behaviors of time-dependent <a href="https://en.wikipedia.org/wiki/Spectral_energy_distribution">Spectral Energy Distributions(SEDs)</a> of Broad Line Regions(BLRs) surrounding the Supermassive Binary Black Holes(SMBBHs). These behaviors may serve as unique features of SMBBHs, which may help us identify the SMBBHs for observation.</p>
 
-<h3 id="spinning-binary-black-hole-simulation">Spinning Binary Black Hole Simulation</h3>
+<h2 id="12-research-results">1.2 Research Results</h2>
+
+<h3 id="121-raw-data-for-seds">1.2.1 Raw data for SEDs</h3>
+
+<p>The data are all from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac56de">Eduardo et al. 2022</a>. Here, I want to thank Eduardo and Manuela for providing the data.</p>
+
+<p>These data shown here is about the total emission of the binary black hole system, including the circumbinary disk.</p>
+
+<h4 id="spinning-binary-black-hole-simulation">Spinning Binary Black Hole Simulation</h4>
 <p><img src="https://github.com/zj4050/zj4050.github.io/assets/99605082/78cf381c-ad2b-4423-b7dd-44dbd94f6e4b" alt="Spinning BBH" /></p>
-<h3 id="spinless-binary-black-hole-simulation">Spinless Binary Black Hole Simulation</h3>
+<h4 id="spinless-binary-black-hole-simulation">Spinless Binary Black Hole Simulation</h4>
 <p><img src="https://github.com/zj4050/zj4050.github.io/assets/99605082/fa760db5-a59f-4a96-bd66-25cf13615185" alt="Spinless BBH" /></p>
 
+<h3 id="122-blr-radius">1.2.2 BLR radius</h3>
+
+<p>We calculated the BLR radius by using the formula in the Section 7 of <a href="https://iopscience.iop.org/article/10.1088/0004-637X/767/2/149">Misty C. Bentz et al. (2013)</a></p>
+
+<p>The formula is shown below:</p>
+
+\[\log\left({\frac{R_{BLR}}{1 \text{ lt-day}}}\right) = K + \alpha \log\left({\frac{\lambda L_{\lambda}}{10^{44} \text{ erg/s}}}\right)\]
+
+<p>, where \(K = 1.527\) and \(\alpha = 0.533\).</p>
+<h3 id="122-binary-black-hole-models">1.2.2 Binary-Black-Hole Models</h3>
+
+<p>We have built a list of models for the binary black holes for <a href="https://trac.nublado.org">CLOUDY</a> to run simulation.</p>
+
+<p>The below is from CLOUDY documentation “hazy1”:</p>
+<blockquote>
+  <p>CLOUDY is a photoionization code, designed to simulation physical conditions within clouds ranging from the intergalactic medium to high-density LTE and STE limits. It predicts the thermal, ionization, and chemical structure of a cloud which lies with these limits, and predicts its observed spectrum.</p>
+</blockquote>
+
+<p>Here we used CLOUDY to simulation the spectrum emitted from BLRs around the SMBBHs.</p>
+
+<p>The dataset of models we have here is listed below:</p>
+
+<ul>
+  <li>Minimum luminosity with 1R<sub>BLR</sub></li>
+  <li>Minimum luminosity with 2R<sub>BLR</sub></li>
+  <li>Minimum luminosity with 4R<sub>BLR</sub></li>
+  <li>Time-averaged luminosity with 1R<sub>BLR</sub></li>
+  <li>Time-averaged luminosity with 2R<sub>BLR</sub></li>
+  <li>Time-averaged luminosity with 4R<sub>BLR</sub></li>
+  <li>Maximum luminosity with 1R<sub>BLR</sub></li>
+  <li>Maximum luminosity with 2R<sub>BLR</sub></li>
+  <li>Maximum luminosity with 4R<sub>BLR</sub></li>
+</ul>
+
+<p>The models for the spinning and spinless cases are the same.</p>
+
+<h3 id="123-ionization-parameters">1.2.3 Ionization Parameters</h3>
+
+<p>The ionization parameteter is a measure of the ionizing structure of atoms, usually for hydrogen.</p>
+
+<p>It has the expression as follows:</p>
+
+\[U = \frac{Q}{4\pi R_{BLR}^2 c n_H}\]
+
+<p>, where Q is the ionizing photons per second, c is the speed of light, R<sub>BLR</sub> is the radius of the BLR, and n<sub>H</sub> is the number density of the gas (assuming it is pure hydrogen).</p>
+
+<h4 id="ionization-parameters-for-each-model">Ionization parameters for each model</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Spinning Model</th>
+      <th style="text-align: center">Ionization Parameter in log scale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Min_Luminosity_1R<sub>BLR</sub></td>
+      <td style="text-align: center">0.1857</td>
+    </tr>
+    <tr>
+      <td>Min_Luminosity_2R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.4163</td>
+    </tr>
+    <tr>
+      <td>Min_Luminosity_4R<sub>BLR</sub></td>
+      <td style="text-align: center">-1.0184</td>
+    </tr>
+    <tr>
+      <td>Time-averaged_Luminosity_1R<sub>BLR</sub></td>
+      <td style="text-align: center">0.2909</td>
+    </tr>
+    <tr>
+      <td>Time-averaged_Luminosity_2R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.3112</td>
+    </tr>
+    <tr>
+      <td>Time-averaged_Luminosity_4R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.9132</td>
+    </tr>
+    <tr>
+      <td>Max_Luminosity_1R<sub>BLR</sub></td>
+      <td style="text-align: center">0.4473</td>
+    </tr>
+    <tr>
+      <td>Max_Luminosity_2R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.1548</td>
+    </tr>
+    <tr>
+      <td>Max_Luminosity_4R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.7569</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Spinless Model</th>
+      <th style="text-align: center">Ionization Parameter in log scale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Min_Luminosity_1R<sub>BLR</sub></td>
+      <td style="text-align: center">0.1437</td>
+    </tr>
+    <tr>
+      <td>Min_Luminosity_2R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.4584</td>
+    </tr>
+    <tr>
+      <td>Min_Luminosity_4R<sub>BLR</sub></td>
+      <td style="text-align: center">-1.0604</td>
+    </tr>
+    <tr>
+      <td>Time-averaged_Luminosity_1R<sub>BLR</sub></td>
+      <td style="text-align: center">0.2251</td>
+    </tr>
+    <tr>
+      <td>Time-averaged_Luminosity_2R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.3769</td>
+    </tr>
+    <tr>
+      <td>Time-averaged_Luminosity_4R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.9790</td>
+    </tr>
+    <tr>
+      <td>Max_Luminosity_1R<sub>BLR</sub></td>
+      <td style="text-align: center">0.3969</td>
+    </tr>
+    <tr>
+      <td>Max_Luminosity_2R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.2052</td>
+    </tr>
+    <tr>
+      <td>Max_Luminosity_4R<sub>BLR</sub></td>
+      <td style="text-align: center">-0.8072</td>
+    </tr>
+  </tbody>
+</table>
 
 </article>
 
@@ -98,7 +255,7 @@
   <div class="footer-column">
     <p>
       <small>
-        &copy;&nbsp;<time datetime="2023-07-22T20:37:49-04:00">2023</time>. All right reserved.
+        &copy;&nbsp;<time datetime="2023-07-23T09:40:35-04:00">2023</time>. All right reserved.
       </small>
     </p>
     <p>
