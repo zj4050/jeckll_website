@@ -29,6 +29,18 @@ $$\log\left({\frac{R_{BLR}}{1 \text{ lt-day}}}\right) = K + \alpha \log\left({\f
 
 , where $$K = 1.527$$ and $$\alpha = 0.533$$, and $$\lambda L_{\lambda}$$ is the optical luminosity at wavelength 5100 <span>&#8491;</span>.
 
+For the spinning binary black holes,  
+
+$$\lambda L_{\lambda} = 7.4897\times 10^{40} erg/s$$
+
+$$R_{BLR} = 1.88105\times 10^{15} cm $$
+
+For the spinless case, 
+
+$$\lambda L_{\lambda} = 7.4103\times 10^{40} erg/s$$
+
+$$R_{BLR} = 1.87068\times 10^{15} cm$$
+
 ### 1.2.2 Binary-Black-Hole Models
 
 We have built a list of models for the binary black holes for [CLOUDY](https://trac.nublado.org) to run simulation.
@@ -51,7 +63,22 @@ The dataset of models we have here is listed below:
 - Maximum luminosity with 4R<sub>BLR</sub>
 
 
-The models for the spinning and spinless cases are the same.
+The luminosities here are classified into three classes: min, time-averaged, and max. The values for the spinning and spinless cases are listed below:
+
+#### Spinning Case
+
+- Min Luminosity: $$1.1220\times 10^{43}$$ erg/s
+- Time-averaged Luminosity: $$1.6545\times 10^{43}$$ erg/s
+- Max Luminosity: $$3.5160\times 10^{43}$$ erg/s
+
+#### Spinless Case
+
+- Min Luminosity: $$9.7923\times 10^{42}$$ erg/s
+- Time-averaged Luminosity: $$1.2862\times 10^{43}$$ erg/s
+- Max Luminosity: $$2.8986\times 10^{43}$$ erg/s
+
+
+
 
 ### 1.2.3 Ionization Parameters
 
@@ -90,3 +117,8 @@ $$U = \frac{Q}{4\pi R_{BLR}^2 c n_H}$$
 | Max_Luminosity_1R<sub>BLR</sub>              |          0.3969                   |
 | Max_Luminosity_2R<sub>BLR</sub>              |          -0.2052                  |
 | Max_Luminosity_4R<sub>BLR</sub>              |          -0.8072                  |
+
+
+## 1.3 Codes
+
+The codes for analyzing the simulation data are located in my [GitHub repositories](https://github.com/zj4050/Binary-black-holes).
