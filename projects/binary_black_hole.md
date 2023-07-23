@@ -5,8 +5,7 @@ usemathjax: true
 ---
 ## 1.1 Overview
 
-This project is intended to investigate the behaviors of time-dependent [Spectral Energy Distributions(SEDs)](https://en.wikipedia.org/wiki/Spectral_energy_distribution) of Broad Line Regions(BLRs) surrounding the Supermassive Binary Black Holes(SMBBHs). These behaviors may serve as unique features of SMBBHs, which may help us identify the SMBBHs for observation. 
-
+This project is intended to investigate the behaviors of time-dependent [Spectral Energy Distributions(SEDs)](https://en.wikipedia.org/wiki/Spectral_energy_distribution) of Broad Line Regions(BLRs) surrounding the Supermassive Binary Black Holes(SMBBHs). These behaviors may serve as unique features of SMBBHs, which may help us identify the SMBBHs for observation.
 ## 1.2 Research Results
 
 ### 1.2.1 Raw data for SEDs
@@ -52,7 +51,7 @@ The dataset of models we have here is listed below:
 - Maximum luminosity with 4R<sub>BLR</sub>
 
 
-The models for the spinning and spinless cases are the same. 
+The models for the spinning and spinless cases are the same.
 
 ### 1.2.3 Ionization Parameters
 
