@@ -15,7 +15,7 @@ gem 'faraday', '2.7.10'
 gem 'nokogiri', '1.15.3'
 gem 'jekyll-clean-dark', '0.1.3'
 gem 'texture', '0.5'
-gem 'webrick', '1.8.1'
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
