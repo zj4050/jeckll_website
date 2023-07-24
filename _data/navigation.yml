@@ -1,9 +1,7 @@
 - title: Home
-  url: /home/
+  url: /
 - title: About
   url: /about/
-- title: Archive
-  url: /archive/
 - title: Research Projects
   url: /projects/
 - title: CV

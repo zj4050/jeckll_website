@@ -41,7 +41,7 @@ $$\lambda L_{\lambda} = 7.4103\times 10^{40} erg/s$$
 
 $$R_{BLR} = 1.87068\times 10^{15} cm$$
 
-### 1.2.2 Binary-Black-Hole Models
+### 1.2.2 Binary-Black-Hole (BBH) Models
 
 We have built a list of models for the binary black holes for [CLOUDY](https://trac.nublado.org) to run simulation.
 
@@ -119,6 +119,15 @@ $$U = \frac{Q}{4\pi R_{BLR}^2 c n_H}$$
 | Max_Luminosity_4R<sub>BLR</sub>              |          -0.8072                  |
 
 
+### 1.2.4 Standard AGN Models
+
+We also built a library of standard AGN models for comparision with BBH models.
+
+The only difference between standard AGN models and BBH models is the SED. We used standard AGN SED for standard AGN models.
+
+Others remain the same, such as ionization parameters and BLR radius.
+
+### 1.2.5 Line Ratio vs. Ionization Parameters
 ## 1.3 Codes
 
 The codes for analyzing the simulation data are located in my [GitHub repositories](https://github.com/zj4050/Binary-black-holes).

@@ -28,6 +28,14 @@
 
     <!-- for mathjax support -->
     
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
 </head>
 
   <body>
@@ -43,7 +51,7 @@
       <ul class="nav-list">
       
         <li class="nav-item">
-          <a href="/home/" class="">
+          <a href="/" class="">
             Home
           </a>
         </li>
@@ -51,12 +59,6 @@
         <li class="nav-item">
           <a href="/about/" class="">
             About
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="/archive/" class="">
-            Archive
           </a>
         </li>
       
@@ -83,7 +85,55 @@
   <h1 class="page-title">Spectroscopic Analysis of OH-Megamaser Galaxy IRAS 11506-3851</h1>
   <h2 id="11-overview">1.1 Overview</h2>
 
+<p>This projected is intended to investigate the ionization structure of the OH-Megamaser Galaxy IRAS 11506-3851 based upon the selected emission line ratios.</p>
 <h2 id="12-research-results">1.2 Research Results</h2>
+
+<h3 id="121-baldwin-phillips--terlevich-bpt-diagram">1.2.1 Baldwin, Phillips &amp; Terlevich (BPT) Diagram</h3>
+
+<p>The BPT diagrams demostrate how LINERs can be distinguished from normal HII regions and normal AGNs (Seyferts and QSOs) on the basis of three line ratios:</p>
+<ul>
+  <li>[O III] \(\lambda\) 5007 / H\(\beta\)</li>
+  <li>[N II] \(\lambda\) 6583 / H\(\alpha\)</li>
+  <li>[S II] \(\lambda \lambda\) 6716, 6731 / H\(\alpha\)</li>
+</ul>
+
+<p>We have BPT diagrams at three different position angles (PAs): \(158^{\circ}\), \(239^{\circ}\), and \(261^{\circ}\).</p>
+
+<h4 id="pa158">PA158:</h4>
+
+<p><img src="/projects/IRAS 11506-3851/Figures/PA158/BPT(NII)_PA158.png" alt="BPT(NII) PA158" />
+<img src="/projects/IRAS 11506-3851/Figures/PA158/BPT(OI)_PA158.png" alt="BPT(OI) PA158" />
+<img src="/projects/IRAS 11506-3851/Figures/PA158/BPT(SII)_PA158.png" alt="BPT(SII) PA158" /></p>
+
+<h4 id="pa239">PA239:</h4>
+
+<p><img src="/projects/IRAS 11506-3851/Figures/PA239/BPT(NII)_PA239.png" alt="BPT(NII) PA239" />
+<img src="/projects/IRAS 11506-3851/Figures/PA239/BPT(OI)_PA239.png" alt="BPT(OI) PA239" />
+<img src="/projects/IRAS 11506-3851/Figures/PA239/BPT(SII)_PA239.png" alt="BPT(SII) PA239" /></p>
+
+<h4 id="pa261">PA261:</h4>
+
+<p><img src="/projects/IRAS 11506-3851/Figures/PA261/BPT(NII)_PA261.png" alt="BPT(NII) PA261" />
+<img src="/projects/IRAS 11506-3851/Figures/PA261/BPT(OI)_PA261.png" alt="BPT(OI) PA261" />
+<img src="/projects/IRAS 11506-3851/Figures/PA261/BPT(SII)_PA261.png" alt="BPT(SII) PA261" /></p>
+
+<p>The black dashed line is the pure star forming curve from <a href="https://doi.org/10.1111/j.1365-2966.2003.07154.x">Kauffmann et al.(2003)</a>
+The red line is the maximum start-burst separation line from the <a href="https://doi.org/10.1111/j.1365-2966.2006.10859.x">Kewley et al. (2006)</a></p>
+
+<p>The blue dot-dashed line is the Seyfert separation line, separating the Seyfert and <a href="https://en.wikipedia.org/wiki/Low-ionization_nuclear_emission-line_region">low ionization nuclear emission-line regions (LINER)</a> galaxies. This empircal line is from <a href="https://doi.org/10.1111/j.1365-2966.2006.10859.x">Kewley et al. (2006)</a></p>
+
+<p>So based upon the figures shown above, the OH-Megamaser galaxy is probably a star-forming galaxy.</p>
+
+<h3 id="122-velocity-diagram">1.2.2 Velocity Diagram</h3>
+
+<h4 id="pa158-1">PA158</h4>
+<p><img src="/projects/IRAS 11506-3851/Figures/PA158/Velocity_PA158.png" alt="Velocity PA158" /></p>
+
+<h4 id="pa239-1">PA239</h4>
+<p><img src="/projects/IRAS 11506-3851/Figures/PA239/Velocity_PA239.png" alt="Velocity PA239" /></p>
+
+<h4 id="pa261-1">PA261</h4>
+<p><img src="/projects/IRAS 11506-3851/Figures/PA261/Velocity_PA261.png" alt="Velocity PA261" /></p>
 
 <h2 id="13-codes">1.3 Codes</h2>
 
@@ -97,7 +147,7 @@
   <div class="footer-column">
     <p>
       <small>
-        &copy;&nbsp;<time datetime="2023-07-23T14:26:03-04:00">2023</time>. All right reserved.
+        &copy;&nbsp;<time datetime="2023-07-24T10:55:10-04:00">2023</time>. All right reserved.
       </small>
     </p>
     <p>
